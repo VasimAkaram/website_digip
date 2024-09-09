@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiPlus - Digital Marketing Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'custom-bg': '#d5c8c8',
+                        'custom-orange': '#FF5400',
+                        'custom-pink': '#fce4ec',
+                        'custom-purple': '#3C2A4D',
+                        'custom-orange-hover': '#FF6C37',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navbar -->
+    <div class="container mx-auto mb-4 px-4 max-w-5xl">
+        <div class="py-2">
+            <nav class="bg-custom-bg rounded-3xl p-3">
+                <div class="flex justify-between items-center">
+                    <a href="#" class="navbar-brand"><img src="/images/main-logo.svg" alt="Logo" class="h-6"></a>
+                    <div class="hidden md:flex space-x-3">
+                        <a href="/Home.html" class="nav-link font-bold text-sm">Home</a>
+                        <a href="/services.html" class="nav-link font-bold text-sm">Service</a>
+                        <a href="#" class="nav-link font-bold text-sm">Projects</a>
+                        <a href="/blogs.html" class="nav-link font-bold text-sm">Blogs</a>
+                        <a href="/contact.html" class="nav-link font-bold text-sm">Contact Us</a>
+                        <a href="/aboutus.html" class="nav-link font-bold text-sm">About Us</a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-3">
+                        <a href="#" class="text-black text-sm">Login</a>
+                        <a href="#" class="bg-custom-orange text-white px-3 py-1 rounded text-sm">Get Started</a>
+                    </div>
+                    <button class="md:hidden" id="navbar-toggler">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="md:hidden hidden mt-3" id="mobile-menu">
+                    <a href="/Home.html" class="block py-1 font-bold text-sm">Home</a>
+                    <a href="/services.html" class="block py-1 font-bold text-sm">Service</a>
+                    <a href="#" class="block py-1 font-bold text-sm">Projects</a>
+                    <a href="/blogs.html" class="block py-1 font-bold text-sm">Blogs</a>
+                    <a href="/contact.html" class="block py-1 font-bold text-sm">Contact Us</a>
+                    <a href="/aboutus.html" class="block py-1 font-bold text-sm">About Us</a>
+                    <div class="mt-3">
+                        <a href="#" class="block py-1 text-black text-sm">Login</a>
+                        <a href="#" class="block py-1 bg-custom-orange text-white px-3 rounded text-sm">Get Started</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-100 py-8 md:py-12">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center max-w-5xl">
+            <div class="md:w-1/2 mb-6 md:mb-0 md:pr-6">
+                <h1 class="text-3xl md:text-4xl font-bold mb-3">There's a better way to grow.</h1>
+                <p class="text-lg mb-4">DigiPlus is India's premier terminal for all-in-one digital marketing place.</p>
+                <a href="#" class="bg-custom-orange hover:bg-custom-orange-hover text-white font-bold py-2 px-4 rounded-full transition duration-300 text-sm">Get Started</a>
+            </div>
+            <div class="md:w-1/2">
+                <video controls width="100%" height="auto" class="rounded-lg shadow-md">
+                    <source src="/images/digi_v.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted by Section -->
+    <div class="container mx-auto my-8 px-4 max-w-5xl">
+        <h6 class="text-center mb-6 text-base font-semibold">Trusted by 50,000+ customers</h6>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center">
+            <img src="/images/logo1.png" alt="Logo 1" class="h-8 mx-auto">
+            <img src="/images/logo2.png" alt="Logo 2" class="h-10 mx-auto">
+            <img src="/images/logo3.png" alt="Logo 3" class="h-6 mx-auto">
+            <img src="/images/logo4.png" alt="Logo 4" class="h-8 mx-auto">
+            <img src="/images/logo5.png" alt="Logo 5" class="h-8 mx-auto">
+            <img src="/images/logo6.png" alt="Logo 6" class="h-8 mx-auto">
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">Services we offer</h2>
+            <div class="flex justify-center mb-6">
+                <a href="#" class="bg-custom-orange text-white px-4 py-1 rounded-full mr-3 text-sm">Services</a>
+                <a href="#" class="text-gray-600 px-4 py-1 rounded-full text-sm">Edtech</a>
+            </div>
+            <div class="space-y-8">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-4 md:mb-0 md:pr-6">
+                        <h3 class="text-xl font-bold mb-3">Search Engine Optimization (SEO)</h3>
+                        <p class="text-gray-600 text-sm">Optimize clients' websites and content for search engines, focusing on relevant keywords, technical aspects, and user experience, to increase visibility and drive organic traffic.</p>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="/images/image-1.png" alt="SEO service" class="rounded-lg shadow-md">
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row-reverse items-center">
+                    <div class="md:w-1/2 mb-4 md:mb-0 md:pl-6">
+                        <h3 class="text-xl font-bold mb-3">Social Media Marketing</h3>
+                        <p class="text-gray-600 text-sm">Develop and implement social media campaigns that engage audiences and drive brand awareness, utilizing advanced targeting and retargeting techniques, and leveraging data and analytics for optimization.</p>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="/images/image-2.png" alt="Social Media Marketing service" class="rounded-lg shadow-md">
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-4 md:mb-0 md:pr-6">
+                        <h3 class="text-xl font-bold mb-3">Email Marketing</h3>
+                        <p class="text-gray-600 text-sm">Create and execute targeted email marketing campaigns that drive engagement and conversion, using data and analytics to optimize messaging and delivery.</p>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="/images/image-3.png" alt="Email marketing Service" class="rounded-lg shadow-md">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="bg-custom-orange py-12">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-white mb-8">Lorem ipsum dolor sit amet.</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="/images/Link-1.png" alt="Case Study 1" class="w-full">
+                    <div class="p-4">
+                        <p class="text-gray-600 mb-3 text-sm">Lorem ipsum dolor sit amet consectetur. Sollicitudin duis.</p>
+                        <a href="#" class="text-custom-orange font-semibold text-sm">View in Details</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="/images/Link-2.png" alt="Case Study 2" class="w-full">
+                    <div class="p-4">
+                        <p class="text-gray-600 mb-3 text-sm">Lorem ipsum dolor sit amet consectetur. Sollicitudin duis.</p>
+                        <a href="#" class="text-custom-orange font-semibold text-sm">View in Details</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="/images/Link-3.png" alt="Case Study 3" class="w-full">
+                    <div class="p-4">
+                        <p class="text-gray-600 mb-3 text-sm">Lorem ipsum dolor sit amet consectetur. Sollicitudin duis.</p>
+                        <a href="#" class="text-custom-orange font-semibold text-sm">View in Details</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="/images/Link-4.png" alt="Case Study 4" class="w-full">
+                    <div class="p-4">
+                        <p class="text-gray-600 mb-3 text-sm">Lorem ipsum dolor sit amet consectetur. Sollicitudin duis.</p>
+                        <a href="#" class="text-custom-orange font-semibold text-sm">View in Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">An Experience People Love to Talk About</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <p class="text-gray-600 mb-4 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                    <div class="flex items-center">
+                        <img src="/images/person-1.png" alt="Shayan" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <h4 class="font-bold text-sm">Shayan</h4>
+                            <p class="text-gray-500 text-xs">CEO, ABCD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <p class="text-gray-600 mb-4 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                    <div class="flex items-center">
+                        <img src="/images/person-2.png" alt="Anumeh" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <h4 class="font-bold text-sm">Anumeh</h4>
+                            <p class="text-gray-500 text-xs">CEO, XYZ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <p class="text-gray-600 mb-4 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                    <div class="flex items-center">
+                        <img src="/images/person-3.png" alt="Ahmad" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <h4 class="font-bold text-sm">Ahmad</h4>
+                            <p class="text-gray-500 text-xs">CEO, ABC</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="bg-custom-pink py-12">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">Frequently Asked Questions?</h2>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/3 mb-6 md:mb-0">
+                    <h5 class="font-bold mb-3 text-sm">Have more questions?</h5>
+                    <button class="bg-white text-gray-700 font-semibold py-2 px-3 border border-gray-400 rounded shadow mb-3 w-full text-sm">Email support</button>
+                    <button class="bg-white text-gray-700 font-semibold py-2 px-3 border border-gray-400 rounded shadow w-full text-sm">Go to Help Center <i class="fas fa-external-link-alt ml-1"></i></button>
+                </div>
+                <div class="md:w-2/3 md:pl-6">
+                    <div class="space-y-3">
+                        <div class="border-b border-gray-200 pb-3">
+                            <button class="flex items-center justify-between w-full text-left font-semibold text-sm">
+                                <span>Lorem ipsum dolor sit amet, consectetur?</span>
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+                            <p class="mt-2 text-gray-600 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <!-- Add more FAQ items here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Help Section -->
+    <section class="bg-custom-pink py-12">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <div class="bg-white rounded-[40px] p-6 flex flex-col md:flex-row items-center justify-between">
+                <div class="mb-4 md:mb-0 md:mr-6">
+                    <h2 class="text-2xl font-bold text-custom-purple mb-2">Happy to help you!</h2>
+                    <p class="text-custom-purple text-sm">Need more details? Our expert academic counsellors will be happy to patiently explain everything that you want to know.</p>
+                </div>
+                <a href="#" class="bg-custom-orange hover:bg-custom-orange-hover text-white font-bold py-2 px-4 rounded-full transition duration-300 text-sm">
+                    Get started for free
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-6">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <div class="mb-6">
+                <img src="/images/border.svg" alt="Wave Line" class="w-full">
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <ul class="flex flex-wrap justify-center md:justify-start space-x-3 mb-3 md:mb-0">
+                    <li><a href="services.html" class="text-black hover:underline text-sm">Features</a></li>
+                    <li><a href="#" class="text-black hover:underline text-sm">Help Center</a></li>
+                    <li><a href="#" class="text-black hover:underline text-sm">Terms of Use</a></li>
+                    <li><a href="#" class="text-black hover:underline text-sm">Privacy Policy</a></li>
+                    <li><a href="#" class="text-black hover:underline text-sm">Report</a></li>
+                </ul>
+                <div class="text-center md:text-right">
+                    <div class="flex justify-center md:justify-end space-x-3 mb-2">
+                        <a href="#" class="text-black text-xl"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/digipplusdigitalagency" class="text-black text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/digipplus" class="text-black text-xl"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://youtube.com/@digipplustestprep6034" class="text-black text-xl"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p class="text-xs">©2024 Diggipplus. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('navbar-toggler').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

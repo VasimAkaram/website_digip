@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Diggipplus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'custom-bg': '#d5c8c8',
+                        'custom-orange': '#FF5400',
+                        'custom-pink': '#fce4ec',
+                        'custom-purple': '#3C2A4D',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navbar -->
+    <div class="container mx-auto mb-5 px-4">
+        <div class="py-3">
+            <nav class="bg-custom-bg rounded-3xl p-4">
+                <div class="flex justify-between items-center">
+                    <a href="#" class="navbar-brand"><img src="/images/main-logo.svg" alt="Logo" class="h-8"></a>
+                    <div class="hidden md:flex space-x-4">
+                        <a href="/Home.html" class="nav-link font-bold">Home</a>
+                        <a href="/services.html" class="nav-link font-bold">Service</a>
+                        <a href="#" class="nav-link font-bold">Projects</a>
+                        <a href="/blogs.html" class="nav-link font-bold">Blogs</a>
+                        <a href="/contact.html" class="nav-link font-bold">Contact Us</a>
+                        <a href="/aboutus.html" class="nav-link font-bold">About Us</a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-4">
+                        <a href="#" class="login text-black">Login</a>
+                        <a href="#" class="get-started bg-custom-orange text-white px-4 py-2 rounded">Get Started</a>
+                    </div>
+                    <button class="md:hidden">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="container mx-auto text-center my-5 px-4">
+        <h1 class="text-5xl font-bold mb-2">Services</h1>
+        <h5 class="text-xl mb-8">Feel free to contact us for queries</h5>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="service-card border-2 border-gray-200 p-6 rounded-lg">
+                <img src="/images/si-1.png" alt="Digital Strategy and Planning" class="w-full h-auto mb-4">
+                <h5 class="text-xl font-bold mb-2">Digital Strategy and Planning</h5>
+                <p class="text-sm">Develop a comprehensive digital strategy that aligns with clients' business goals and objectives, utilizing data-driven insights, and leveraging AI and machine learning technologies.</p>
+            </div>
+            <div class="service-card border-2 border-gray-200 p-6 rounded-lg">
+                <img src="/images/si-2.png" alt="Search Engine Optimization" class="w-full h-auto mb-4">
+                <h5 class="text-xl font-bold mb-2">Search Engine Optimization</h5>
+                <p class="text-sm">Optimize clients' websites and content for search engines, focusing on relevant keywords, technical aspects, and user experience, to increase visibility and drive organic traffic.</p>
+            </div>
+            <div class="service-card border-2 border-gray-200 p-6 rounded-lg">
+                <img src="/images/si-3.png" alt="PPC Advertising" class="w-full h-auto mb-4">
+                <h5 class="text-xl font-bold mb-2">Pay-Per-Click (PPC) Advertising</h5>
+                <p class="text-sm">Design and execute targeted ad campaigns on search engines and social media platforms, leveraging audience data and AI-powered tools to maximize ROI.</p>
+            </div>
+            <div class="service-card border-2 border-gray-200 p-6 rounded-lg">
+                <img src="/images/si-1.png" alt="Digital Strategy and Planning" class="w-full h-auto mb-4">
+                <h5 class="text-xl font-bold mb-2">Digital Strategy and Planning</h5>
+                <p class="text-sm">Develop a comprehensive digital strategy that aligns with clients' business goals and objectives, utilizing data-driven insights, and leveraging AI and machine learning technologies.</p>
+            </div>
+            <div class="service-card border-2 border-gray-200 p-6 rounded-lg">
+                <img src="/images/si-2.png" alt="Search Engine Optimization" class="w-full h-auto mb-4">
+                <h5 class="text-xl font-bold mb-2">Search Engine Optimization</h5>
+                <p class="text-sm">Optimize clients' websites and content for search engines, focusing on relevant keywords, technical aspects, and user experience, to increase visibility and drive organic traffic.</p>
+            </div>
+            <div class="service-card border-2 border-gray-200 p-6 rounded-lg">
+                <img src="/images/si-3.png" alt="PPC Advertising" class="w-full h-auto mb-4">
+                <h5 class="text-xl font-bold mb-2">Pay-Per-Click (PPC) Advertising</h5>
+                <p class="text-sm">Design and execute targeted ad campaigns on search engines and social media platforms, leveraging audience data and AI-powered tools to maximize ROI.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Help Section -->
+    <div class="container mx-auto px-4 my-12">
+        <div class="bg-custom-pink rounded-[56px] p-8 flex flex-col md:flex-row items-center justify-between">
+            <div class="mb-6 md:mb-0">
+                <h2 class="text-3xl font-bold text-custom-purple mb-2">Happy to help you!</h2>
+                <p class="text-custom-purple">Need more details? Our expert academic counsellors will be happy to patiently explain everything that you want to know.</p>
+            </div>
+            <a href="#" class="bg-custom-orange hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full transition duration-300">
+                Get started for free
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-8">
+        <div class="container mx-auto px-4">
+            <div class="mb-8">
+                <img src="/images/border.svg" alt="Wave Line" class="w-full">
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <ul class="flex flex-wrap justify-center md:justify-start space-x-4 mb-4 md:mb-0">
+                    <li><a href="services.html" class="text-black hover:underline">Features</a></li>
+                    <li><a href="#" class="text-black hover:underline">Help Center</a></li>
+                    <li><a href="#" class="text-black hover:underline">Terms of Use</a></li>
+                    <li><a href="#" class="text-black hover:underline">Privacy Policy</a></li>
+                    <li><a href="#" class="text-black hover:underline">Report</a></li>
+                </ul>
+                <div class="text-center md:text-right">
+                    <div class="flex justify-center md:justify-end space-x-4 mb-2">
+                        <a href="#" class="text-black text-2xl"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/digipplusdigitalagency" class="text-black text-2xl"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/digipplus" class="text-black text-2xl"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://youtube.com/@digipplustestprep6034" class="text-black text-2xl"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p class="text-sm">©2024 Diggipplus. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
